@@ -1,0 +1,375 @@
+/* Dashboard Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+}
+.sidebar {
+    width: 300px;
+    background-color: #007bff;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    position: fixed;
+}
+.sidebar img {
+    width: auto;
+    height: 60px; /* Adjust based on your logo size */
+    margin-bottom: 20px; /* Space below the logo */
+}
+.sidebar .admin-menu {
+    font-size: 1.5rem;
+    line-height: 24px;
+    text-align: left;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 24px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.sidebar a:hover {
+    background-color: #0056b3;
+}
+.sidebar a i {
+    margin-right: 12px;
+}
+.view-site {
+    margin-top: 20vh;
+    cursor: pointer;
+}
+.view-site i {
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+.content {
+    margin-left: 320px; /* Leave space for the sidebar */
+    padding: 32px;
+    flex-grow: 1;
+}
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+.case-list {
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+th {
+    background-color: #0056b3;
+    color: white;
+}
+.search-bar {
+    margin-bottom: 20px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.delete-btn {
+    background-color: #dc3545; /* Red */
+}
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Styles for add new Complaints */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+/* Styles for View Complaints */
+.case-list {
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+th {
+    background-color: #0056b3;
+    color: white;
+}
+.search-bar {
+    margin-bottom: 20px;
+}
+.approve {
+ background-color: #2d9411;
+ margin-bottom: 10px;
+}
+.reject {
+ background-color: #c82333;
+}
+
+/* Case List Styles */
+
+.case-list {
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+th {
+    background-color: #0056b3;
+    color: white;
+}
+.search-bar {
+    margin-bottom: 20px;
+}
+button {
+    margin-right: 5px;
+}
+.update {
+    background-color: coral;
+}
+.delete {
+    background-color: #c82333;
+}
+
+/* Reports and Analytics Styles */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+h2 {
+    margin-bottom: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+th {
+    background-color: #0056b3;
+    color: white;
+}
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.chart {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+}
+.chart:last-child {
+    margin-right: 0;
+}
+/* user managment Styles */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+th {
+    background-color: #0056b3;
+    color: white;
+}
+.role-select {
+    margin: 5px 0;
+}
+.role-select {
+    padding: 8px 16px;
+    background-color: #dadada;
+    width: 40%;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.role-select:hover {
+    background-color: #fff;
+}
+
+/* Add your styles here */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.add_new {
+    margin-top: 24px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+h2 {
+    margin-bottom: 10px;
+}
+.update {
+    margin: 10px 0;
+    padding: 10px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.download-btn {
+    margin-top: 20px;
+}
+/* Styles */
+h1 {
+    margin-bottom: 20px;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.delete-btn {
+    background-color: #dc3545; /* Red */
+}
+.delete-btn:hover {
+    background-color: #c82333;
+}

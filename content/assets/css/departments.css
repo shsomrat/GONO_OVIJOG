@@ -1,0 +1,60 @@
+.departments-container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+.departments-container h1 {
+  font-size: 3rem;
+  color: var(--dark4);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.departments-container p {
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  color: var(--dark);
+  margin: 0 auto;
+  margin-bottom: 64px;
+  max-width: 60%;
+}
+.departments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.department-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: calc((100%/3) - (40px/3));
+  cursor: pointer;
+  display: flex;
+  transition: transform 0.2s;
+}
+.department-card p{
+  max-width: 100%;
+}
+.department-card img {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+}
+.department-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.department-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.department-card p {
+  font-size: 0.9em;
+}
+.department-card:hover {
+  transform: scale(1.05);
+}

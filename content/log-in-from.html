@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GONO OVIJOG</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon-3.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/log-in-form.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <div class="navbar-container">
+          <a href="index.html" class="navbar-logo">
+            <img src="./assets/img/logo-light.png" alt="Logo" class="logo-img">
+          </a>
+          <button class="navbar-toggle " id="navbar-toggle">
+            <span class="open-icon">☰</span>
+            <span class="close-icon">✕</span>
+          </button>
+          <div class="navbar-links " id="navbar-links">
+            <ul>
+              <li><a href="index_login.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-btn">
+              <button class="btn"><a href="sign-up-form.html">Sign up</a></button>
+              <button class="btn"><a href="log-in-from.html">Log in</a></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <div class="login-container">
+      <h2>Login to Your Account</h2>
+      <form action="submit_login.php" method="post">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+          <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+
+          <input type="submit" value="Login">
+      </form>
+      <p>Don't have an account? <a href="sign-up-form.html">Sign up here</a></p>
+  </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="./assets/img/logo-light.png" alt="Organization Logo" />
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-address">
+          <p>123 Complaint St., City, Country</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Email: info@organization.com</p>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2024 GONO OVIJOG. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+
+  </body>
+</html>

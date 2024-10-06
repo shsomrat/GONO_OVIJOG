@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GONO OVIJOG - User Account</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon-3.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/account-styles.css">
+    <style>
+      /* Add this CSS to make the sidebar sticky */
+      .dashboard-wrapper {
+        display: flex;
+      }
+
+      .dashboard-menu {
+        position: sticky; /* Make the sidebar sticky */
+        top: 0; /* Position it at the top of the viewport */
+        height: 100vh; /* Full height to the viewport */
+        overflow-y: auto; /* Scrollable if content exceeds height */
+        padding: 20px; /* Add some padding */
+        background-color: #f8f9fa; /* Optional: background color for visibility */
+        border-right: 1px solid #dee2e6; /* Optional: border for separation */
+      }
+
+      .dashboard-content {
+        flex: 1; /* Allow content to fill remaining space */
+        padding: 20px; /* Add some padding to the content area */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <div class="navbar-container">
+          <a href="index.html" class="navbar-logo">
+            <img src="./assets/img/logo-light.png" alt="Logo" class="logo-img">
+          </a>
+          <button class="navbar-toggle " id="navbar-toggle">
+            <span class="open-icon">☰</span>
+            <span class="close-icon">✕</span>
+          </button>
+          <div class="navbar-links " id="navbar-links">
+            <ul>
+              <li><a href="index_login.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-btn">
+              <button class="btn active"><a href="#">Account<i class="fa-regular fa-circle-user"></i></a></button>
+              <button class="btn "><a href="index.html">Log out</a></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="user-dashboard">
+      <div class="container">
+        <div class="dashboard-wrapper">
+          <aside class="dashboard-menu">
+            <h3>User Dashboard</h3>
+            <ul>
+              <li class="active"><a href="#profile-overview">Profile Overview</a></li>
+              <li><a href="#personal-info">Personal Information</a></li>
+              <li><a href="#edit-profile">Edit Profile</a></li>
+              <li><a href="#my-complaints">My Complaints</a></li>
+              <li><a href="#complaint-status">Status Updates</a></li>
+            </ul>
+          </aside>
+
+          <div class="dashboard-content">
+            <!-- Profile Overview -->
+            <section id="profile-overview">
+              <h2>Profile Overview</h2>
+              <p>Welcome, <strong>User Name</strong>! Here's a quick overview of your account.</p>
+              <div class="profile-details">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@email.com</p>
+                <p><strong>Joined:</strong> January 1, 2024</p>
+              </div>
+            </section>
+
+            <!-- Personal Information -->
+            <section id="personal-info">
+              <h2>Personal Information</h2>
+              <p>Your personal information is stored here. Please make sure it's up to date.</p>
+              <div class="info-details">
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Address:</strong> 123 Street, City, Country</p>
+                <p><strong>Occupation:</strong> Social Worker</p>
+              </div>
+            </section>
+
+            <!-- Edit Profile -->
+            <section id="edit-profile">
+              <h2>Edit Profile</h2>
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="John Doe">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="johndoe@email.com">
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" value="+1 234 567 890">
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" value="123 Street, City, Country">
+
+                <button class="save-change" type="submit">Save Changes</button>
+              </form>
+            </section>
+
+            <!-- My Complaints -->
+            <section id="my-complaints">
+              <h2>My Complaints</h2>
+              <ul class="complaints-list">
+                <li>
+                  <strong>Complaint ID:</strong> 12345
+                  <p><strong>Title:</strong> Unresolved local issue</p>
+                  <p><strong>Status:</strong> In Progress</p>
+                  <a href="complaint-details.html">View Details</a>
+                </li>
+                <li>
+                  <strong>Complaint ID:</strong> 12346
+                  <p><strong>Title:</strong> Mismanagement by official</p>
+                  <p><strong>Status:</strong> Resolved</p>
+                  <a href="complaint-details.html">View Details</a>
+                </li>
+              </ul>
+            </section>
+
+            <!-- Status Updates -->
+            <section id="complaint-status">
+              <h2>Status Updates</h2>
+              <p>You can view and update the status of your submitted complaints.</p>
+              <ul class="status-updates">
+                <li>
+                  <strong>Complaint ID:</strong> 12345
+                  <p><strong>Status:</strong> Under Review</p>
+                  <a href="complaint-details.html">Update Status</a>
+                </li>
+                <li>
+                  <strong>Complaint ID:</strong> 12346
+                  <p><strong>Status:</strong> Resolved</p>
+                  <a href="complaint-details.html">Update Status</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="./assets/img/logo-light.png" alt="Organization Logo" />
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="index_login.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-address">
+          <p>123 Complaint St., City, Country</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Email: info@organization.com</p>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2024 GONO OVIJOG. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+
+  </body>
+</html>

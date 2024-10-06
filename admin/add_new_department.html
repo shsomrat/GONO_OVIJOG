@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GONO OVIJOG - Add New Department</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon-3.png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="sidebar">
+        <img src="./assets/img/logo-light.png" alt="Organization Logo"> <!-- Add your logo image path here -->
+        <h2 class="admin-menu">Admin Panel</h2>
+        <a href="dashboard.html"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+        <a href="add_new_complaint.html"><i class="fa-solid fa-file-pen"></i>Add New Case</a>
+        <a href="pending_complaints.html"><i class="fa-solid fa-file-waveform"></i>Pending Complaints</a>
+        <a href="complaints_list.html"><i class="fa-solid fa-eye"></i>View Complaints</a>
+        <a href="reports_and_analitics.html"><i class="fa-solid fa-chart-line"></i>Reports and Analytics</a>
+
+        <a href="uers_managment.html"><i class="fa-solid fa-user-group"></i>Users Management</a>
+
+
+        <!-- Add more links as needed -->
+
+        <h2 class="admin-menu view-site">View Site <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+    </div>
+
+    <div class="content">
+        <h1>Add New Department</h1>
+        <form id="add-department-form">
+            <input type="text" id="department-title" placeholder="Department Title" required>
+            <textarea id="department-description" placeholder="Department Description" required></textarea>
+            <input type="file" id="department-thumbnail" accept="image/*" required>
+            <button class="add_new" type="submit">Add Department</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('add-department-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const title = document.getElementById('department-title').value;
+            const description = document.getElementById('department-description').value;
+            const thumbnail = document.getElementById('department-thumbnail').files[0];
+
+            // Log the department data to the console for debugging
+            console.log({ title, description, thumbnail });
+
+            // Example of handling thumbnail upload and sending data to the server
+            // Replace the following with your actual server endpoint and logic
+            const formData = new FormData();
+            formData.append('title', title);
+            formData.append('description', description);
+            formData.append('thumbnail', thumbnail);
+
+            // fetch('/api/departments', {
+            //     method: 'POST',
+            //     body: formData
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     // Handle success response
+            //     alert('Department added successfully');
+            // })
+            // .catch(error => {
+            //     console.error('Error adding department:', error);
+            // });
+
+            // For now, just show an alert as a placeholder
+            alert(`Department added successfully! Title: ${title}, Description: ${description}`);
+        });
+    </script>
+</body>
+</html>

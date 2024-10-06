@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GONO OVIJOG - Complaint Details</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon-3.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="sidebar">
+        <img src="./assets/img/logo-light.png" alt="Organization Logo"> <!-- Add your logo image path here -->
+        <h2 class="admin-menu">Admin Panel</h2>
+        <a href="dashboard.html"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+        <a href="add_new_complaint.html"><i class="fa-solid fa-file-pen"></i>Add New Case</a>
+        <a href="pending_complaints.html"><i class="fa-solid fa-file-waveform"></i>Pending Complaints</a>
+        <a href="complaints_list.html"><i class="fa-solid fa-eye"></i>View Complaints</a>
+        <a href="reports_and_analitics.html"><i class="fa-solid fa-chart-line"></i>Reports and Analytics</a>
+        <a href="uers_managment.html"><i class="fa-solid fa-user-group"></i>User Management</a>
+
+        <!-- Add more links as needed -->
+
+        <h2 class="admin-menu view-site">View Site <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h2>Case Details</h2>
+            <p><strong>Complaint ID:</strong> <span id="complaint-id">001</span></p>
+            <p><strong>Filed By:</strong> <span id="filed-by">John Doe</span></p>
+            <p><strong>Date Submitted:</strong> <span id="submission-date">January 5, 2024</span></p>
+            <p><strong>Status:</strong> <span id="status">In Progress</span></p>
+            <h2>Description</h2>
+            <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget libero nec mauris vehicula hendrerit.</p>
+
+            <h2>Supporting Evidence</h2>
+            <ul>
+                <li><a href="#">Document 1</a></li>
+                <li><a href="#">Image 1</a></li>
+                <li><a href="#">Video 1</a></li>
+            </ul>
+
+            <h2>Status Updates</h2>
+            <div class="update">
+                <h3>Update 1 (January 7, 2024)</h3>
+                <p>We have contacted the concerned authority regarding this issue.</p>
+            </div>
+            <div class="update">
+                <h3>Update 2 (January 10, 2024)</h3>
+                <p>The investigation is ongoing, and we are gathering more information.</p>
+            </div>
+
+            <h2>Resolution</h2>
+            <p><em>This section will be updated when the issue is resolved.</em></p>
+
+            <div class="download-btn">
+                <button onclick="downloadPDF()">Download Case Details as PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            // Placeholder function for PDF download
+            alert('PDF downloaded successfully!'); // This should trigger actual PDF generation
+        }
+    </script>
+</body>
+</html>

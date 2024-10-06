@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GONO OVIJOG - Complain Form</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon-3.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/complaint-from.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <div class="navbar-container">
+          <a href="index.html" class="navbar-logo">
+            <img src="./assets/img/logo-light.png" alt="Logo" class="logo-img">
+          </a>
+          <button class="navbar-toggle " id="navbar-toggle">
+            <span class="open-icon">☰</span>
+            <span class="close-icon">✕</span>
+          </button>
+          <div class="navbar-links " id="navbar-links">
+            <ul>
+              <li><a href="index_login.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-btn">
+              <button class="btn"><a href="account.html">Account<i class="fa-regular fa-circle-user"></i></a></button>
+              <button class="btn"><a href="index.html">Log out</a></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <section class="complaint-form">
+      <div class="complaint-from-container">
+        <h1>Submit Your Complaint</h1>
+        <form id="complaintForm" action="submit_complaint.php" method="POST" enctype="multipart/form-data">
+
+          <!-- Personal Information -->
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="Electricity">Electricity</option>
+                <option value="Water Supply">Water Supply</option>
+                <!-- Add more department options -->
+            </select>
+          </div>
+
+          <!-- Complaint Details -->
+          <div class="form-group">
+            <label for="complaintTitle">Complaint Title</label>
+            <input type="text" id="complaintTitle" name="complaintTitle" required>
+          </div>
+
+          <div class="form-group">
+            <label for="complaintDescription">Description</label>
+            <textarea id="complaintDescription" name="complaintDescription" rows="5" required></textarea>
+          </div>
+
+          <!-- Document Upload -->
+          <div class="form-group">
+            <label for="evidence">Upload Supporting Documents</label>
+            <input type="file" id="evidence" name="evidence[]" multiple accept=".pdf, .doc, .docx, .jpg, .png, .jpeg">
+            <p class="file-info">Allowed formats: PDF, DOC, DOCX, JPG, PNG (Max 5 files)</p>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-group">
+            <button type="submit" class="submit-btn">Submit Your Complaint</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="./assets/img/logo-light.png" alt="Organization Logo" />
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-address">
+          <p>123 Complaint St., City, Country</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Email: info@organization.com</p>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2024 GONO OVIJOG. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+
+  </body>
+</html>

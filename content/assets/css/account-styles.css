@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidugu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* ================ Reset CSS end ===================== */
+/* ================ Reset CSS start =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "Inter", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Gidugu", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+button{
+	border: none;
+  background-color: #00000000;
+}
+/* ================ Reset CSS end ===================== */
+
+/* ================ Common CSS start ================== */
+:root {
+  --primary: #2d9411;
+  --primary-dark: #F6F9FC;
+  --white: #ffffff;
+  --gray-4: #343A40;
+  --dark: #333;;
+  --dark-3: #000000;
+
+  --shadow-2: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-4: 0px 8px 10px rgba(0, 0, 0, 0.15);
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.btn{
+  background: var(--white);
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: var(--dark-3);
+    opacity: 0.8;
+    color: var(--white);
+
+  }
+.btn.active {
+  background-color: var(--dark-3);
+  opacity: 0.8;
+  color: var(--white);
+
+}
+.btn i {
+  margin-left: 10px;
+}
+button {
+  margin: 16px 0px;
+}
+
+/* ================ Common CSS end ==================== */
+
+/* User Dashboard */
+.user-dashboard {
+  padding: 50px 0;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard-menu {
+  width: 25%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.dashboard-menu h3 {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 32px;
+}
+
+.dashboard-menu ul {
+  list-style: none;
+  line-height: 16px;
+  padding: 0;
+}
+
+.dashboard-menu ul li {
+  margin-bottom: 15px;
+}
+
+.dashboard-menu ul li a {
+  text-decoration: none;
+  color: var(--dark-3);
+  font-size: 16px;
+}
+
+.dashboard-menu ul li.active a,
+.dashboard-menu ul li a:hover {
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.dashboard-content {
+  width: 75%;
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  padding: 30px;
+}
+
+.dashboard-content h2 {
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.profile-details,
+.info-details {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 24px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.save-change {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary);
+}
+
+.complaints-list,
+.status-updates {
+  list-style: none;
+  padding: 0;
+}
+
+.complaints-list li,
+.status-updates li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.user-dashboard p {
+  font-size: 1rem;
+  line-height: 24px;
+  color: var(--dark);
+  margin-bottom: 30px;
+  text-align: left;
+}
+.complaints-list li,
+.status-updates li {
+  line-height: 24px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+
+  .dashboard-menu,
+  .dashboard-content {
+    width: 100%;
+  }
+}
